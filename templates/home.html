@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandSlideDetector</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}" />
+</head>
+
+<body>
+    <div class="main_container">
+        <h1>Land Slide Detector</h1>
+            <input type="text" name="event_month" id="event_month" placeholder="Event Month" />
+            <input type="text" name="fatality_count" id="fatality_count" placeholder="fatality_count" />
+            <input type="text" name="injury_count" id="injury_count" placeholder="injured_count" />
+            <input type="text" name="population" id="population" placeholder="population" />
+            <input type="text" name="longitude" id="longitude" placeholder="longitude" />
+            <input type="text" name="latitude" id="latitude" placeholder="latitude" />
+            <input type="text" name="landslide_category_complex" id="landslide_category_complex" placeholder="landslide_category_complex" />
+            <input type="text" name="landslide_category_creep" id="landslide_category_creep" placeholder="landslide_category_creep" />
+            <input type="text" name="landslide_category_debris_flow" id="landslide_category_debris_flow" placeholder="landslide_category_debris_flow" />
+            <input type="text" name="landslide_category_earth_fall" id="landslide_category_earth_fall" placeholder="landslide_category_earth_fall" />
+            <input type="text" name="landslide_category_earth_flow" id="landslide_category_earth_flow" placeholder="landslide_category_earth_flow" />
+            <input type="text" name="landslide_category_lahar" id="landslide_category_lahar" placeholder="landslide_category_lahar" />
+            <input type="text" name="landslide_category_rock_fall" id="landslide_category_rock_fall" placeholder="landslide_category_rock_fall" />
+            <input type="text" name="landslide_category_slide" id="landslide_category_slide" placeholder="landslide_category_slide" />
+            <input type="text" name="landslide_category_snow_avalanche" id="landslide_category_snow_avalanche" placeholder="landslide_category_snow_avalanche" />
+            <input type="text" name="landslide_size_large" id="landslide_size_large" placeholder="landslide_size_large" />
+            <input type="text" name="landslide_size_medium" id="landslide_size_medium" placeholder="landslide_size_medium" />
+            <input type="text" name="landslide_size_small" id="landslide_size_small" placeholder="landslide_size_small" />
+            <input type="text" name="landslide_size_unknown" id="landslide_size_unknown" placeholder="landslide_size_unknown" />
+            <button type="submit" onclick="dataSent()">Submit</button>
+    </div>
+</body>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="{{url_for('static', filename='js/post.js')}}"></script>
+</html>
